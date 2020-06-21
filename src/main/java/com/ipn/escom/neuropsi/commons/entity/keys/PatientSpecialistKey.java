@@ -14,8 +14,10 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Embeddable
-public class PatientKey implements Serializable {
-    private static final long serialVersionUID = 2999312324510580136L;
-    @Column(name = "id_user")
-    private Long idUser;
+public class PatientSpecialistKey implements Serializable {
+    private static final long serialVersionUID = 6126587258463002726L;
+    @Column(name = "id_patient")
+    private Long idPatient;
+    @Column(name = "id_specialist")
+    private Long idSpecialist;
 }

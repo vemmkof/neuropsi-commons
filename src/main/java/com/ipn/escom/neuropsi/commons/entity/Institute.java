@@ -1,5 +1,6 @@
 package com.ipn.escom.neuropsi.commons.entity;
 
+import com.ipn.escom.neuropsi.commons.entity.common.EntityTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

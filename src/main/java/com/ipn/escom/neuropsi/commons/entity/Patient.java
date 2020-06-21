@@ -1,6 +1,6 @@
 package com.ipn.escom.neuropsi.commons.entity;
 
-import com.ipn.escom.neuropsi.commons.entity.keys.PatientKey;
+import com.ipn.escom.neuropsi.commons.entity.common.EntityTime;
 import com.ipn.escom.neuropsi.commons.entity.values.Laterality;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -21,12 +21,12 @@ public class Patient extends EntityTime implements Serializable {
 
     private static final long serialVersionUID = -1744235761499622948L;
 
-    @EmbeddedId
-    private PatientKey patientKey;
+    @Id
+    @NotNull
+    private Long idPatient;
 
     @NotNull
-    @OneToOne
-    @MapsId("id_user")
+    @OneToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_user")
     private User user;
 

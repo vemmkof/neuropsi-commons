@@ -1,6 +1,6 @@
 package com.ipn.escom.neuropsi.commons.entity;
 
-import com.ipn.escom.neuropsi.commons.entity.keys.SpecialistKey;
+import com.ipn.escom.neuropsi.commons.entity.common.EntityTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,32 +19,23 @@ import java.io.Serializable;
 public class Specialist extends EntityTime implements Serializable {
 
     private static final long serialVersionUID = -1027900055620607942L;
+    @Id
+    @NotNull
+    private Long idSpecialist;
 
     @NotNull
-    @EmbeddedId
-    private SpecialistKey specialistKey;
-
-    @NotNull
-    @ManyToOne
-    @MapsId("id_institute")
-    @JoinColumn(name = "id_institute")
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_institute", nullable = false)
     private Institute institute;
 
     @NotNull
-    @OneToOne
-    @MapsId("id_user")
-    @JoinColumn(name = "id_user")
+    @OneToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_user", nullable = false)
     private User user;
 
     @NotNull
     @NotEmpty
     @Column(nullable = false)
     private String professionalId;
-
-//    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
-//    @JoinTable(name = "specialist_patient",
-//            joinColumns = {@JoinColumn(name = "id_specialist", nullable = false)},
-//            inverseJoinColumns = {@JoinColumn(name = "id_patient", nullable = false)})
-//    private List<Patient> patients;
 
 }

@@ -1,6 +1,7 @@
 package com.ipn.escom.neuropsi.commons.entity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.ipn.escom.neuropsi.commons.entity.common.EntityTime;
 import com.ipn.escom.neuropsi.commons.entity.values.Gender;
 import com.ipn.escom.neuropsi.commons.entity.values.Role;
 import lombok.AllArgsConstructor;

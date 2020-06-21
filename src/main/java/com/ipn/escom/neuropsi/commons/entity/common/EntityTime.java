@@ -1,4 +1,4 @@
-package com.ipn.escom.neuropsi.commons.entity;
+package com.ipn.escom.neuropsi.commons.entity.common;
 
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
