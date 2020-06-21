@@ -15,9 +15,12 @@ import java.io.Serializable;
 @AllArgsConstructor
 @Embeddable
 public class PatientSpecialistKey implements Serializable {
+
     private static final long serialVersionUID = 6126587258463002726L;
+
     @Column(name = "id_patient")
     private Long idPatient;
+
     @Column(name = "id_specialist")
     private Long idSpecialist;
 }
