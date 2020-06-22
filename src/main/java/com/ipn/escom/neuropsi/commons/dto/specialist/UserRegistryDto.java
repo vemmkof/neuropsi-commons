@@ -1,4 +1,4 @@
-package com.ipn.escom.neuropsi.commons.dto.patient;
+package com.ipn.escom.neuropsi.commons.dto.specialist;
 
 import com.ipn.escom.neuropsi.commons.entity.Disease;
 import com.ipn.escom.neuropsi.commons.entity.Patient;

@@ -1,7 +1,5 @@
-package com.ipn.escom.neuropsi.commons.entity.values;
+package com.ipn.escom.neuropsi.commons.entity;
 
-import com.ipn.escom.neuropsi.commons.entity.Disease;
-import com.ipn.escom.neuropsi.commons.entity.Patient;
 import com.ipn.escom.neuropsi.commons.entity.common.EntityTime;
 import com.ipn.escom.neuropsi.commons.entity.keys.PatientDiseaseKey;
 import lombok.Data;
