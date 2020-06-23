@@ -14,14 +14,14 @@ import java.io.Serializable;
 @NoArgsConstructor
 @AllArgsConstructor
 @Embeddable
-public class PatientDiseaseKey implements Serializable {
+public class ModuleQuestionKey implements Serializable {
 
-    private static final long serialVersionUID = 4123814962735905261L;
+    private static final long serialVersionUID = 3848189194892110752L;
 
-    @Column(name = "id_patient")
-    private Long idPatient;
+    @Column(name = "id_module")
+    private Long idModule;
 
 
-    @Column(name = "id_disease")
-    private Long idDisease;
+    @Column(name = "id_question")
+    private Long idQuestion;
 }
