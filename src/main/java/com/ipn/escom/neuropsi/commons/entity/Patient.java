@@ -10,6 +10,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 import java.io.Serializable;
 
 @Data
@@ -22,7 +23,8 @@ public class Patient extends EntityTime implements Serializable {
     private static final long serialVersionUID = -1744235761499622948L;
 
     @Id
-    @NotNull
+    @Positive
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idPatient;
 
     @NotNull

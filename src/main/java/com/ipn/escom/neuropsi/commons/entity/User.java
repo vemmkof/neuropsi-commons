@@ -25,9 +25,9 @@ public class User extends EntityTime implements Serializable {
     private static final long serialVersionUID = 5084202603438255147L;
 
     @Id
+    @Positive
     @Column(nullable = false)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Positive
     private Long idUser;
 
     @Email

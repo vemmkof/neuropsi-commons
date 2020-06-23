@@ -9,6 +9,7 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
 import java.io.Serializable;
 
 @Data
@@ -19,8 +20,10 @@ import java.io.Serializable;
 public class Specialist extends EntityTime implements Serializable {
 
     private static final long serialVersionUID = -1027900055620607942L;
+
     @Id
-    @NotNull
+    @Positive
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idSpecialist;
 
     @NotNull

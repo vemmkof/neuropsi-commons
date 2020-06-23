@@ -21,8 +21,8 @@ public class Institute extends EntityTime implements Serializable {
     private static final long serialVersionUID = 2087985402313143226L;
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Positive
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idInstitute;
 
     @NotEmpty
