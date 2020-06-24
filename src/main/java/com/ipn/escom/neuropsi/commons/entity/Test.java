@@ -25,16 +25,13 @@ public class Test extends EntityTime implements Serializable {
     private Long idTest;
 
     @ManyToOne(optional = false)
-//    @Column(name = "id_specialist", nullable = false)
     private Specialist specialist;
 
 
     @ManyToOne(optional = false)
-//    @Column(name = "id_patient", nullable = false)
     private Patient patient;
 
     @ManyToOne(optional = false)
-//    @Column(name = "id_module", nullable = false)
     private Module module;
 
     private Long score;

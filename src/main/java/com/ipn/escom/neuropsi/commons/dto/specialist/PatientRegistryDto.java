@@ -10,7 +10,7 @@ import java.util.List;
 
 @Data
 @Builder
-public class UserRegistryDto implements Serializable {
+public class PatientRegistryDto implements Serializable {
     private static final long serialVersionUID = 5635623336428889234L;
     private Patient patient;
     private List<Disease> diseases;
