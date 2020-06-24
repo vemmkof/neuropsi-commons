@@ -2,12 +2,18 @@ package com.ipn.escom.neuropsi.commons.entity;
 
 import com.ipn.escom.neuropsi.commons.entity.common.EntityTime;
 import com.ipn.escom.neuropsi.commons.entity.keys.PatientDiseaseKey;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Data
+@Builder
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 public class PatientDisease extends EntityTime implements Serializable {
 
