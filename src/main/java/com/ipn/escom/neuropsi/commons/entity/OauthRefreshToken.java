@@ -5,6 +5,7 @@ import com.ipn.escom.neuropsi.commons.entity.common.EntityTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
@@ -14,6 +15,7 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@EqualsAndHashCode(callSuper = false)
 @Entity
 @Table(name = "oauth_refresh_token")
 public class OauthRefreshToken extends EntityTime implements Serializable {
